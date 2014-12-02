@@ -12,9 +12,6 @@ class Fatura
 
     @paga = true if valor_total >= @valor
   end
-  def paga=(paga)
-    @paga = paga
-  end
   def paga?
     @paga
   end
