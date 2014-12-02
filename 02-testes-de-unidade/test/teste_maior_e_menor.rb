@@ -5,7 +5,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), '../lib/carrinho_de_c
 require File.expand_path(File.join(File.dirname(__FILE__), '../lib/produto.rb'))
 
 class TesteMaiorMenor < Test::Unit::TestCase
-  def test_ordem_descrescente
+  def teste_ordem_descrescente
     carrinho = CarrinhoDeCompras.new
 
     carrinho << Produto.new('Geladeira', 450.0)
@@ -18,7 +18,7 @@ class TesteMaiorMenor < Test::Unit::TestCase
     assert_equal 'Jogo de pratos', algoritmo.menor.nome
     assert_equal 'Geladeira', algoritmo.maior.nome
   end
-  def test_apenas_um_produto
+  def teste_apenas_um_produto
     carrinho = CarrinhoDeCompras.new
     carrinho << Produto.new('Geladeira', 450.0)
 
