@@ -1,9 +1,5 @@
 #encoding: UTF-8
-module Cargo
-  DESENVOLVEDOR = 0
-  DBA = 1
-  TESTADOR = 2
-end
+require File.expand_path('./cargo.rb', File.dirname(__FILE__))
 class Funcionario
   attr_reader :nome, :salario, :cargo
   def initialize(nome, salario, cargo)
